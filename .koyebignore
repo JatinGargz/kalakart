@@ -1,0 +1,9 @@
+.git/
+__pycache__/
+*.py[cod]
+*.log
+*.tmp
+.venv/
+env/
+kalakart.db-shm
+kalakart.db-wal

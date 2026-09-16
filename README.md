@@ -1,7 +1,7 @@
 # 🏛️ KALAKART (कलाकार्ट) / SHILP AI
 ### AI-Powered Digital Marketplace & Business Manager for Indian Artisans | SIH 2026
 
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/JatinGargz/kalakart)
+[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/JatinGargz/kalakart&name=kalakart&ports=8000;http;/)
 
 A unified, voice-first digital marketplace and enterprise AI copilot designed for Indian master artisans, handloom weavers, and craft clusters under **PM Vishwakarma** and **PM-DAKSH**.
 
@@ -26,14 +26,23 @@ A unified, voice-first digital marketplace and enterprise AI copilot designed fo
 
 ---
 
-## 🚀 One-Click Deploy to Render
+## 🚀 1-Click Deploy to Koyeb (100% Free, No Credit Card Required)
 
-Deploy this entire full-stack app (FastAPI + ML Model + Frontend SPA) to Render with 1 click:
+Deploy this full-stack application to Koyeb in seconds:
 
-1. Click the button below:  
-   [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/JatinGargz/kalakart)
-2. Render reads `render.yaml` and deploys the unified Python web service.
-3. Once built, open your unique Render URL (e.g. `https://kalakart-ai.onrender.com`).
+[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/JatinGargz/kalakart&name=kalakart&ports=8000;http;/)
+
+1. Click the button above to launch Koyeb.
+2. Sign in with GitHub (`JatinGargz`).
+3. Koyeb automatically detects `Dockerfile` and configures port `8000`.
+4. Choose the **Free Nano** tier (no credit card required).
+5. Click **Deploy**. Your permanent HTTPS URL (e.g. `https://kalakart-<org>.koyeb.app`) is generated!
+
+---
+
+## ☁️ Alternative: Deploy to Render
+
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/JatinGargz/kalakart)
 
 ---
 
