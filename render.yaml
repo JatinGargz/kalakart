@@ -1,0 +1,13 @@
+# KALAKART live deploy — single free service (UI + API together)
+services:
+  - type: web
+    name: kalakart-ai
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT --app-dir backend
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+# NOTE (free tier): kalakart.db re-seeds the 16 authentic GI-certified
+# products automatically on every boot.
+

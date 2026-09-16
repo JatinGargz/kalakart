@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>KALAKART — Crafting Bharat's Tomorrow</title>
+<meta name="theme-color" content="#4a0e14" />
+<meta name="description" content="KalaKart (SHILP AI) — AI business manager + 5-marketplace publisher for Indian artisans." />
+<link rel="manifest" href="manifest.json" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="app">
+
+  <!-- ============ SIDEBAR ============ -->
+  <aside class="sidebar">
+    <div class="side-brand">
+      <div class="side-logo" aria-hidden="true">
+        <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="#7a1620" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M16 4c2.5 3.5 2.5 7 0 10-2.5-3-2.5-6.5 0-10z"/>
+          <path d="M8.5 8.5c3.8.8 6.3 3 7.5 6.5-3.8-.8-6.3-3-7.5-6.5z"/>
+          <path d="M23.5 8.5c-3.8.8-6.3 3-7.5 6.5 3.8-.8 6.3-3 7.5-6.5z"/>
+          <path d="M6 18c4 1 8 1 10-1 2 2 6 2 10 1-1 4-5 7-10 7s-9-3-10-7z"/>
+          <path d="M12 25.5h8"/>
+        </svg>
+      </div>
+      <div class="side-brand-t"><b>KALAKART</b><small data-en="Crafting Bharat's Tomorrow" data-hi="भारत का कल गढ़ना">Crafting Bharat's Tomorrow</small></div>
+    </div>
+    <nav class="side-nav" id="sideNav">
+      <button class="active" data-tab="home"><svg viewBox="0 0 24 24"><path d="M4 11l8-7 8 7"/><path d="M6 9.5V20h12V9.5"/><path d="M10 20v-5h4v5"/></svg> <span data-en="Home" data-hi="होम">Home</span></button>
+      <button data-tab="marketplace"><svg viewBox="0 0 24 24"><path d="M6 8h12l1 12H5L6 8z"/><path d="M9 8V6a3 3 0 016 0v2"/></svg> <span data-en="Marketplace" data-hi="बाज़ार">Marketplace</span></button>
+      <button data-tab="products"><svg viewBox="0 0 24 24"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9L12 3z"/><path d="M12 12l8-4.5M12 12L4 7.5M12 12v9"/></svg> <span data-en="My Products" data-hi="मेरे उत्पाद">My Products</span></button>
+      <button data-tab="listings"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 9h8M8 13h8M8 17h5"/></svg> <span data-en="My Listings" data-hi="मेरी लिस्टिंग">My Listings</span></button>
+      <button data-tab="orders"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="3"/><circle cx="9" cy="10" r="1.4"/><path d="M6.5 16c.6-1.6 1.5-2.4 2.5-2.4s1.9.8 2.5 2.4"/><path d="M14 9h4M14 13h4M14 17h4"/></svg> <span data-en="Orders &amp; Earnings" data-hi="ऑर्डर व कमाई">Orders &amp; Earnings</span></button>
+      <button data-tab="assistant"><svg viewBox="0 0 24 24"><path d="M6 20L18 8"/><path d="M15 4l.9 2.1L18 7l-2.1.9L15 10l-.9-2.1L12 7l2.1-.9L15 4z"/><path d="M19 12l.6 1.4L21 14l-1.4.6L19 16l-.6-1.4L17 14l1.4-.6L19 12z"/></svg> <span data-en="AI Assistant" data-hi="AI सहायक">AI Assistant</span></button>
+      <button data-tab="trending"><svg viewBox="0 0 24 24"><path d="M4 19l5-6 4 3 7-9"/><path d="M14 7h6v6"/></svg> <span data-en="Trending" data-hi="ट्रेंडिंग">Trending</span></button>
+      <button data-tab="settings"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19 12a7 7 0 00-.1-1.2l2-1.5-2-3.4-2.3 1a7 7 0 00-2-1.2L14.2 3h-4l-.4 2.7a7 7 0 00-2 1.2l-2.3-1-2 3.4 2 1.5A7 7 0 005 12c0 .4 0 .8.1 1.2l-2 1.5 2 3.4 2.3-1a7 7 0 002 1.2l.4 2.7h4l.4-2.7a7 7 0 002-1.2l2.3 1 2-3.4-2-1.5c.1-.4.1-.8.1-1.2z"/></svg> <span data-en="Settings" data-hi="सेटिंग्स">Settings</span></button>
+    </nav>
+    <div class="side-foot">
+      <svg class="side-art" viewBox="0 0 160 150" aria-hidden="true">
+        <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M60 20c8-6 18-8 26-4 6 8 4 18-4 24" stroke="#e8a06a" stroke-width="2"/>
+          <circle cx="72" cy="28" r="9" fill="#f2b98a" stroke="#a33c2e" stroke-width="2"/>
+          <path d="M64 26c2-8 10-12 18-10" stroke="#7a1620" stroke-width="2"/>
+          <path d="M50 60c-8 14-16 30-22 52 10 4 22 6 34 4 2-18 0-38-4-54" fill="#c65a3a" stroke="#7a1620" stroke-width="2"/>
+          <path d="M54 62c8-4 18-6 28-4" stroke="#f4d9a8" stroke-width="2"/>
+          <path d="M40 90c10-2 22-2 32 2" stroke="#f4d9a8" stroke-width="1.6"/>
+          <ellipse cx="104" cy="86" rx="14" ry="17" fill="#d97a3c" stroke="#7a1620" stroke-width="2"/>
+          <path d="M96 78c4-3 12-3 16 0" stroke="#f4d9a8" stroke-width="1.6"/>
+          <path d="M78 108c10 6 26 8 40 4" stroke="#e8a06a" stroke-width="2"/>
+          <path d="M20 130c14-8 34-12 52-10M14 40c6 20 4 44-4 66M140 30c8 22 8 48 0 74" stroke="#e8a06a" stroke-width="1.4" opacity=".7"/>
+        </g>
+      </svg>
+      <p data-en="Crafting a<br>better tomorrow,<br>together…" data-hi="बेहतर कल<br>गढ़ें,<br>मिलकर…">Crafting a<br>better tomorrow,<br>together…</p>
+    </div>
+  </aside>
+
+  <!-- ============ MAIN ============ -->
+  <div class="main">
+    <header class="topbar">
+      <div class="search-wrap">
+        <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        <input id="topSearch" data-en-ph="Search crafts, artisans, or regions…" data-hi-ph="शिल्प, कारीगर या क्षेत्र खोजें…" placeholder="Search crafts, artisans, or regions…" oninput="topSearchGo(this.value)" />
+      </div>
+      <svg class="top-sprig" viewBox="0 0 220 60" aria-hidden="true"><g fill="none" stroke="#c98a4b" stroke-width="1.3" opacity=".8"><path d="M10 50C60 45 120 35 210 8"/><path d="M60 46c-2-8-8-12-16-13 3 7 8 11 16 13zM100 40c-2-8-8-12-16-13 3 7 8 11 16 13zM140 32c-2-8-8-12-16-13 3 7 8 11 16 13zM175 22c-2-8-8-12-16-13 3 7 8 11 16 13z"/><circle cx="40" cy="44" r="2.4"/><circle cx="120" cy="34" r="2.4"/><circle cx="195" cy="14" r="2.6"/></g></svg>
+      <div class="top-right">
+        <button class="lang-toggle" id="langBtn" onclick="toggleLang()" title="Language / भाषा">हिं</button>
+        <button class="ticon" id="darkBtn" title="Theme" onclick="toggleDark()"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M20 14.5A8 8 0 019.5 4 8 8 0 1020 14.5z"/></svg></button>
+        <button class="ticon bell" title="Notifications"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M6 9a6 6 0 0112 0c0 5 2 6 2 6H4s2-1 2-6"/><path d="M10 20a2 2 0 004 0"/></svg><i></i></button>
+        <span id="apiStatus" class="api-dot" title="FastAPI gateway status">● offline</span>
+        <button class="login-btn" id="loginBtn" onclick="authBtn()">Login</button>
+        <div class="profile" id="profileBox" onclick="authBtn()" title="Account"><span class="avatar-circle" id="avatarCircle">P</span><div class="p-info"><b id="profileName">Priya</b><small data-en="Artisan" data-hi="कारीगर">Artisan</small></div><span class="chev">﹀</span></div>
+      </div>
+    </header>
+    <div id="offlineBar" class="offline-bar" hidden>⚠ Backend offline — photo enhancing, Shilpi AI &amp; live products need it. Run: <code>cd backend; python -m uvicorn main:app --port 8000</code> · then Settings → Test connection</div>
+
+    <main class="content">
+
+      <!-- ===== HOME ===== -->
+      <section id="tab-home" class="tab-page active">
+        <div class="hero">
+          <svg class="hero-motif left" viewBox="0 0 200 340" aria-hidden="true"><g fill="none" stroke="#d99a55" stroke-width="1.4" opacity=".55"><path d="M100 10c30 40 30 90 0 130-30-40-30-90 0-130z"/><path d="M100 140c-8 30-8 60 0 90M100 140c8 30 8 60 0 90"/><path d="M60 60c12-4 24 0 30 10-12 4-24 0-30-10zM140 60c-12-4-24 0-30 10 12 4 24 0 30-10z"/><path d="M55 120c12-4 24 0 30 10-12 4-24 0-30-10zM145 120c-12-4-24 0-30 10 12 4 24 0 30-10z"/><path d="M100 230c-14 20-14 50 0 80 14-30 14-60 0-80z"/></g></svg>
+          <svg class="hero-motif mid" viewBox="0 0 160 340" aria-hidden="true"><g fill="none" stroke="#d99a55" stroke-width="1.4" opacity=".5"><path d="M80 20c24 50 24 110 0 160-24-50-24-110 0-160z"/><path d="M80 180c-6 30-6 70 0 110M80 180c6 30 6 70 0 110"/><path d="M45 90c10-3 20 0 25 8-10 3-20 0-25-8zM115 90c-10-3-20 0-25 8 10 3 20 0 25-8z"/></g></svg>
+          <div class="hero-left">
+            <h1 data-en="Your Craft.<br>Your Story.<br>Your Business." data-hi="आपकी कला।<br>आपकी कहानी।<br>आपका व्यापार।">Your Craft.<br>Your Story.<br>Your Business.</h1>
+            <p data-en="Kalakart is an AI-powered business manager and digital marketplace for local Indian artisans." data-hi="कलाकार्ट स्थानीय भारतीय कारीगरों के लिए AI-संचालित बिज़नेस मैनेजर और डिजिटल बाज़ार है।">Kalakart is an AI-powered business manager and digital marketplace for local Indian artisans.</p>
+            <div class="hero-btns">
+              <button class="btn-primary" onclick="showTab('products')"><span data-en="Start Selling" data-hi="बेचना शुरू करें">Start Selling</span> <span class="arr">→</span></button>
+              <button class="btn-outline" onclick="showTab('marketplace')" data-en="Explore Crafts" data-hi="शिल्प देखें">Explore Crafts</button>
+            </div>
+          </div>
+          <div class="hero-right">
+            <img class="hero-photo" src="https://images.unsplash.com/photo-1556760544-74068565f05c?w=1200&q=70&auto=format&fit=crop" alt="Artisan hands shaping clay on a pottery wheel" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=1200&q=70&auto=format&fit=crop'" />
+            <div class="hero-shade"></div>
+            <div class="stat-grid">
+              <div class="stat"><span class="s-badge"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 7v10M9 9.5c0-1 1.2-1.8 3-1.8s3 .8 3 1.8-1 1.6-3 2-3 1-3 2.2 1.2 1.8 3 1.8 3-.8 3-1.8"/></svg></span><div><b>₹ 1.2L+</b><small data-en="Total Sales<br>(Last 30 days)" data-hi="कुल बिक्री<br>(पिछले 30 दिन)">Total Sales<br>(Last 30 days)</small></div></div>
+              <div class="stat"><span class="s-badge"><svg viewBox="0 0 24 24"><circle cx="12" cy="13" r="7"/><path d="M12 9.5V13l2.5 2M9 3h6"/></svg></span><div><b>532</b><small data-en="Orders<br>This Month" data-hi="ऑर्डर<br>इस माह">Orders<br>This Month</small></div></div>
+              <div class="stat"><span class="s-badge"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c1-3.5 3.5-5 7-5s6 1.5 7 5"/></svg></span><div><b class="two-line" data-en="AI Assistance<br>24/7" data-hi="AI सहायता<br>24/7">AI Assistance<br>24/7</b></div></div>
+              <div class="stat"><span class="s-badge"><svg viewBox="0 0 24 24"><path d="M4 10l8-5 8 5v9l-8 4-8-4v-9z"/><path d="M4 10l8 5 8-5M12 15v8"/></svg></span><div><b>2.8k+</b><small data-en="Marketplace<br>Reach" data-hi="बाज़ार<br>पहुंच">Marketplace<br>Reach</small></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-strip">
+          <span class="trim l" aria-hidden="true"></span>
+          <div class="feat"><span class="f-ic"><svg viewBox="0 0 24 24"><path d="M12 3l2.2 4.8L19 10l-4.8 2.2L12 17l-2.2-4.8L5 10l4.8-2.2L12 3z"/><path d="M5 4l.8 1.7L7.5 6.5l-1.7.8L5 9l-.8-1.7L2.5 6.5l1.7-.8L5 4zM19 15l.8 1.7 1.7.8-1.7.8-.8 1.7-.8-1.7-1.7-.8 1.7-.8.8-1.7z"/></svg></span><div><b data-en="AI Product Listing" data-hi="AI उत्पाद लिस्टिंग">AI Product Listing</b><small data-en="Turn your photos into professional product listings." data-hi="अपनी फ़ोटो से पेशेवर उत्पाद लिस्टिंग बनाएं।">Turn your photos into professional product listings.</small></div></div>
+          <div class="feat"><span class="f-ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="1.4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M19.1 4.9L17 7M7 17l-2.1 2.1"/></svg></span><div><b data-en="Pricing Assistance" data-hi="मूल्य सहायता">Pricing Assistance</b><small data-en="Get the right price for your craft." data-hi="अपनी कला का सही दाम पाएं।">Get the right price for your craft.</small></div></div>
+          <div class="feat"><span class="f-ic"><svg viewBox="0 0 24 24"><path d="M4 9l8-4 8 4v10l-8 4-8-4V9z"/><path d="M4 9l8 4 8-4M12 13v9M8.5 6.8v6M12 5.2v6M15.5 6.8v6"/></svg></span><div><b data-en="Marketplace Integration" data-hi="बाज़ार एकीकरण">Marketplace Integration</b><small data-en="Sell across multiple platforms, directly to buyers." data-hi="कई प्लेटफ़ॉर्म पर सीधे खरीदारों को बेचें।">Sell across multiple platforms, directly to buyers.</small></div></div>
+          <div class="feat"><span class="f-ic"><svg viewBox="0 0 24 24"><path d="M12 21c-5 0-8-3-8-7 3 0 6 1 8 3 2-2 5-3 8-3 0 4-3 7-8 7z"/><path d="M12 17V7M12 10C10 8 9 5 9 3c3 0 5 2 6 5 1-3 3-5 6-5 0 2-1 5-3 7"/></svg></span><div><b data-en="Artisan Growth" data-hi="कारीगर विकास">Artisan Growth</b><small data-en="Build your brand, reach new customers, grow." data-hi="अपना ब्रांड बनाएं, नए ग्राहक पाएं, आगे बढ़ें।">Build your brand, reach new customers, grow.</small></div></div>
+          <span class="trim r" aria-hidden="true"></span>
+        </div>
+
+        <div class="sec-head">
+          <div><h2 class="serif"><span data-en="Indian Crafts. Timeless Beauty." data-hi="भारतीय शिल्प। कालातीत सुंदरता।">Indian Crafts. Timeless Beauty.</span> <span class="spark">✦</span></h2>
+          <p class="sub" data-en="From villages to your home — explore authentic handmade products from India's rich craft heritage." data-hi="गांवों से आपके घर तक — भारत की समृद्ध शिल्प विरासत के प्रामाणिक हस्तनिर्मित उत्पाद देखें।">From villages to your home — explore authentic handmade products from India's rich craft heritage.</p></div>
+          <button class="link-btn" onclick="showTab('marketplace')"><span data-en="Explore All" data-hi="सभी देखें">Explore All</span> <span>→</span></button>
+        </div>
+        <div class="cat-grid" id="catGrid"></div>
+
+        <div class="presets-row">
+          <span class="muted" data-en="1-tap artisan presets →" data-hi="1-टैप कारीगर प्रीसेट →">1-tap artisan presets →</span>
+          <button class="preset" onclick="applyPreset('banarasi')">Banarasi Silk</button>
+          <button class="preset" onclick="applyPreset('pottery')">Jaipur Pottery</button>
+          <button class="preset" onclick="applyPreset('dokra')">Bastar Dokra</button>
+        </div>
+      </section>
+
+      <!-- ===== MARKETPLACE ===== -->
+      <section id="tab-marketplace" class="tab-page">
+        <div class="sec-head"><div><h2 class="serif" data-en="Marketplace" data-hi="बाज़ार">Marketplace</h2><p class="sub" data-en="Authentic Indian crafts. Direct from artisans." data-hi="प्रामाणिक भारतीय शिल्प। सीधे कारीगरों से।">Authentic Indian crafts. Direct from artisans.</p></div>
+          <div class="m-tools"><span class="muted" id="dbNote"></span><span class="muted" id="mCount"></span>
+            <select id="sortSel" onchange="sortMarket(this.value)" title="Sort">
+              <option value="featured">✦ Featured</option>
+              <option value="low">₹ Low → High</option>
+              <option value="high">₹ High → Low</option>
+              <option value="rated">★ Top rated</option>
+            </select>
+          </div>
+        </div>
+        <input class="search" data-en-ph="Search for products, artisans or crafts…" data-hi-ph="उत्पाद, कारीगर या शिल्प खोजें…" placeholder="Search for products, artisans or crafts…" oninput="filterMarket(this.value)" />
+        <div class="chips"><button class="active">All</button><button>Pottery</button><button>Textiles</button><button>Woodwork</button><button>Paintings</button><button>Jewellery</button><button>More</button></div>
+        <div class="m-grid" id="marketGrid"></div>
+      </section>
+
+      <!-- ===== MY PRODUCTS (Screen 1 + Screen 2) ===== -->
+      <section id="tab-products" class="tab-page">
+        <div class="sec-head"><div><h2 class="serif" data-en="← Add New Product" data-hi="← नया उत्पाद जोड़ें">← Add New Product</h2><p class="sub" data-en="Screen 1 capture → Screen 2 Vision Studio preview. It's simple!" data-hi="चरण 1 फ़ोटो → चरण 2 Vision Studio पूर्वावलोकन। बहुत आसान!">Screen 1 capture → Screen 2 Vision Studio preview. It's simple!</p></div>
+        <span id="aiStatus" class="muted"></span></div>
+        <div class="two-col">
+          <div class="card">
+            <div class="upload">📷<p><b data-en="Upload Product Photos" data-hi="उत्पाद फ़ोटो अपलोड करें">Upload Product Photos</b><br><span data-en="or capture live / drag &amp; drop" data-hi="या लाइव फ़ोटो लें">or capture live / drag &amp; drop</span></p>
+              <input type="file" id="fileInput" accept="image/*" capture="environment" hidden />
+              <div class="row center-row">
+                <button class="light-btn" onclick="document.getElementById('fileInput').click()" data-en="Upload from Gallery" data-hi="गैलरी से अपलोड करें">Upload from Gallery</button>
+                <button class="light-btn" onclick="openCamera()" data-en="📷 Live Camera" data-hi="📷 लाइव कैमरा">📷 Live Camera</button>
+              </div>
+              <video id="camVideo" playsinline hidden></video>
+              <canvas id="camCanvas" hidden></canvas>
+              <div class="row center-row" id="camRow" hidden>
+                <button class="cta small" onclick="snapPhoto()" data-en="Snap Photo" data-hi="फ़ोटो लें">Snap Photo</button>
+                <button class="light-btn" onclick="closeCamera()" data-en="Close" data-hi="बंद करें">Close</button>
+              </div>
+              <img id="rawPreview" class="preview-img" alt="raw preview" hidden />
+              <small id="fileName" class="muted"></small>
+            </div>
+            <div class="story-box"><h4 data-en="❀ Tell your story (Hindi/English voice)" data-hi="❀ अपनी कहानी बताएं (हिंदी/अंग्रेज़ी आवाज़)">❀ Tell your story (Hindi/English voice)</h4><p class="muted">Web Speech API • Groq Llama-3 • gTTS reply.</p>
+              <div class="row" style="flex-wrap:wrap;gap:8px">
+                <button class="mic" id="micBtn">🎙 <span data-en="Tap to record" data-hi="रिकॉर्ड करें">Tap to record</span> <span id="recTime">00:00</span></button>
+                <button class="light-btn" id="speechBtn" onclick="dictateStory()" data-en="🗣 Speak story" data-hi="🗣 कहानी बोलें">🗣 Speak story</button>
+                <button class="light-btn" id="demoVoiceBtn" onclick="playDemoVoiceNote()" data-en="⚡ 1-Click Demo Voice" data-hi="⚡ 1-क्लिक डेमो आवाज़">⚡ 1-Click Demo Voice</button>
+              </div>
+              <textarea id="storyText" rows="3" data-en-ph="Speak or type…" data-hi-ph="बोलें या लिखें…" placeholder="बोलें या लिखें…">ये थाली जयपुर की नीली मिट्टी से हाथ से बनाई है, फूल-पत्ती हाथ से पेंट की है।</textarea>
+              <small id="dictateOut" class="muted"></small>
+            </div>
+          </div>
+          <div class="card form">
+            <label>Product Name *<input id="pName" value="Handpainted Blue Pottery Plate" /></label>
+            <div class="grid2">
+              <label>Craft Type *<select id="pCraft"><option>Jaipur Blue Pottery</option><option>Banarasi Silk</option><option>Bastar Dokra</option><option>Pottery & Ceramics</option><option>Textiles</option><option>Woodwork</option></select></label>
+              <label>Artisan name<input id="pArtisan" value="Rukmini Art" /></label>
+            </div>
+            <label>Material *<input id="pMaterial" value="Quartz, Glass, Clay" /></label>
+            <div class="grid2">
+              <label>Location *<input id="pLocation" value="Jaipur, Rajasthan" /></label>
+              <label>Labour hours *<input id="pHours" type="number" value="8" min="0" step="0.5" /></label>
+            </div>
+            <div class="grid2">
+              <label>Raw Material Cost (₹) *<input id="pCost" type="number" value="400" /></label>
+              <label>Language<select id="pLang"><option value="hi">Hindi + English</option><option value="en">English</option><option value="hi">Hindi</option></select></label>
+            </div>
+            <button class="cta full" id="aiBtn" onclick="runAIMagic()" data-en="Next → Generate AI Listing (Vision Studio)" data-hi="आगे → AI लिस्टिंग बनाएं (Vision Studio)">Next → Generate AI Listing (Vision Studio)</button>
+            <small class="muted">POST /api/v1/media/process-raw → 1080p + MoSJE seal + listing draft → saved to database.</small>
+          </div>
+        </div>
+
+        <h3 class="serif">✨ AI Magic — Vision Studio ✨</h3>
+        <div class="steps" id="aiSteps">
+          <span class="step done">1 Image Enhancement</span><span class="step done">2 Background Removal</span><span class="step active">3 Product Understanding</span><span class="step">4 Story Generation</span><span class="step">5 Pricing</span><span class="step">6 Listing</span>
+        </div>
+        <div class="two-col">
+          <div class="card center"><p class="muted">Your photo</p><div class="ph" id="rawBox">🏺<small>Raw pottery photo</small></div></div>
+          <div class="card center"><p class="muted">AI enhanced ✨ 1080p + MoSJE seal</p><img id="aiImage" class="preview-img big" alt="AI enhanced" hidden /><div class="ph blue" id="aiBox">🔵<small>Blue Pottery Plate — enhanced</small></div><small id="engineNote" class="muted"></small></div>
+        </div>
+        <div class="card" id="listingCard" hidden>
+          <h4>📝 AI Listing Draft</h4>
+          <b id="listTitleEn"></b><p class="muted" id="listTitleHi"></p>
+          <p id="listDesc"></p>
+          <div class="tags" id="listTags"></div>
+        </div>
+      </section>
+
+      <!-- ===== MY LISTINGS ===== -->
+      <section id="tab-listings" class="tab-page">
+        <div class="sec-head"><div><h2 class="serif" data-en="My Listings" data-hi="मेरी लिस्टिंग">My Listings</h2><p class="sub" data-en="Marketplace-ready info → 1-tap publish to 5 channels." data-hi="बाज़ार-तैयार जानकारी → 1-टैप से 5 चैनलों पर प्रकाशित करें।">Marketplace-ready info → 1-tap publish to 5 channels.</p></div>
+        <button class="cta" onclick="publishMulti()" data-en="🚀 Publish to all 5 channels" data-hi="🚀 सभी 5 चैनलों पर प्रकाशित करें">🚀 Publish to all 5 channels</button></div>
+        <small class="muted" id="pubStatus"></small>
+        <div class="two-col">
+          <div class="prod-img"><img src="https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?w=700&q=80&auto=format&fit=crop" alt="Blue Pottery" onerror="this.remove()" /><div class="ph blue big">🔵 Blue Pottery Plate</div></div>
+          <div class="card price-card">
+            <div><small>Suggested Selling Price</small><h3>₹ <span id="suggestPrice">1,250</span></h3><small class="muted" id="floorNote">Floor ₹— • Wholesale ₹—</small></div>
+            <p class="muted" id="craftStory">Blue pottery — symbol of Jaipur's heritage…</p>
+            <label>Marketplace Ready Info <input id="mTitle" placeholder="Product title" /><input id="mDesc" placeholder="Description" /></label>
+            <div class="row" style="flex-wrap:wrap;gap:8px;margin-top:10px;">
+              <button class="light-btn" onclick="runMLPricing()" data-en="🤖 Random Forest Pricing" data-hi="🤖 रैंडम फ़ॉरेस्ट मूल्य">🤖 Random Forest Pricing</button>
+              <button class="light-btn" onclick="downloadMelaPdf()" data-en="📄 Mela Standee PDF (UPI QR)" data-hi="📄 मेला स्टैंडी PDF (UPI QR)">📄 Mela Standee PDF (UPI QR)</button>
+              <button class="light-btn" onclick="exportOndcJson()" data-en="🌐 ONDC Beckn (JSON)" data-hi="🌐 ONDC बेकन (JSON)">🌐 ONDC Beckn (JSON)</button>
+              <button class="cta" onclick="publishMulti()">Publish 5× →</button>
+            </div>
+          </div>
+        </div>
+        <h3 class="serif">⬣ 5-Marketplace Distribution</h3>
+        <p class="sub">Amazon ASIN • Flipkart FSN • GeM quota • Etsy USD • ONDC Beckn.</p>
+        <div class="chan-grid" id="chanGrid"></div>
+        <h4 data-en="Products" data-hi="उत्पाद">Products</h4><div class="prod-grid mini" id="artisanGrid"></div>
+      </section>
+
+      <!-- ===== ORDERS & EARNINGS ===== -->
+      <section id="tab-orders" class="tab-page">
+        <div class="sec-head"><div><h2 class="serif" data-en="Orders &amp; Earnings" data-hi="ऑर्डर व कमाई">Orders &amp; Earnings</h2><p class="sub" data-en="Welcome back, Priya — your craft is creating a big impact!" data-hi="वापसी पर स्वागत, प्रिया — आपकी कला बड़ा असर डाल रही है!">Welcome back, Priya — your craft is creating a big impact!</p></div><small class="muted">Today, 12 Apr 2026</small></div>
+        <div class="kpi-row">
+          <div class="kpi"><small>Total Sales ₹42,850</small><b>+12%</b></div>
+          <div class="kpi"><small>Active Listings 18</small><b>+2 new</b></div>
+          <div class="kpi"><small>Pending Orders 7</small><b>View →</b></div>
+          <div class="kpi"><small>Earnings ₹28,400</small><b>↑ 15%</b></div>
+        </div>
+        <div class="dash-grid">
+          <div class="card"><h4>Sales Overview <span>Last 7 days →</span></h4><canvas id="salesChart" height="140"></canvas></div>
+          <div class="card"><h4>AI Recommendations</h4><ul class="rec"><li>🔥 Your 'Terracotta' products are trending this week.</li><li>➕ Add 5 more product photos to increase visibility.</li><li>💡 Consider a price increase for 'Handpainted Vase'.</li></ul><button class="cta full">View All Recommendations →</button></div>
+        </div>
+        <div class="dash-grid">
+          <div class="card"><h4><span data-en="Recent Orders →" data-hi="हाल के ऑर्डर →">Recent Orders →</span> <small class="muted" id="ordersNote"></small></h4><table class="tbl"><tr><th>Product</th><th>Buyer</th><th>Amount</th><th>Status</th></tr><tbody id="ordersBody"><tr><td>Blue Pottery Plate</td><td>Aman</td><td>₹1,200</td><td><span class="st ship">Shipped</span></td></tr><tr><td>Terracotta Vase</td><td>Diya</td><td>₹2,300</td><td><span class="st proc">Processing</span></td></tr><tr><td>Wooden Box</td><td>Rohan</td><td>₹1,600</td><td><span class="st conf">Confirmed</span></td></tr></tbody></table></div>
+          <div class="card"><h4>Earnings</h4><canvas id="earnChart" height="130"></canvas>
+            <div class="qa"><button onclick="showTab('products')">⊕ Add Product</button><button onclick="showTab('listings')">Manage Listings</button><button onclick="showTab('orders')">◎ Check Orders</button><button onclick="showTab('assistant')">Pricing Assistant</button><button onclick="showTab('assistant')">🎙 Voice Assistant</button></div></div>
+        </div>
+      </section>
+
+      <!-- ===== AI ASSISTANT ===== -->
+      <section id="tab-assistant" class="tab-page">
+        <div class="sec-head"><div><h2 class="serif" data-en="AI Assistant" data-hi="AI सहायक">AI Assistant</h2><p class="sub">सौदा रक्षक + शिल्प सखी — price confidence + voice companion.</p></div>
+        <button class="light-btn" onclick="openShilpi()" data-en="Open Shilpi modal" data-hi="शिल्पी खोलें">Open Shilpi modal</button></div>
+        <div class="two-col">
+          <div class="card">
+            <h3>⚖ सौदा रक्षक — Bargaining Shield</h3><p class="muted">Wage-floor calculator. POST /api/v1/pricing/bargain-shield</p>
+            <div class="grid2">
+              <label>Buyer's Offer (₹)<input id="offer" type="number" value="800" /></label>
+              <label>Material (₹)<input id="bCost" type="number" value="400" /></label>
+            </div>
+            <div class="grid2">
+              <label>Hours<input id="bHours" type="number" value="8" step="0.5" /></label>
+              <label>Wage ₹/hr<input id="bWage" type="number" value="80" /></label>
+            </div>
+            <button class="cta" onclick="checkPrice()" data-en="Check Price →" data-hi="दाम जांचें →">Check Price →</button>
+            <div class="shield" id="shield"><b>Too Low</b><small>The offer is 33% below the suggested price.</small></div>
+            <div class="breakup" id="breakup"><div><span>Material Cost</span><b>₹400</b></div><div><span>Production Effort</span><b>₹350</b></div><div><span>Suggested Price</span><b>₹1,200</b></div><div><span>Profit Margin</span><b>20%</b></div></div>
+            <p class="warn" id="shieldMsg">⚠ You're underpaid. Consider ₹1,000 or above.</p>
+          </div>
+          <div class="card" id="assistant">
+            <h3>🪔 शिल्प सखी — Your AI Companion</h3>
+            <div class="saathi"><div class="avatar">👩🏽</div><p id="saathiText">नमस्ते! मैं आपकी कला-साथी हूँ। आज मैं आपकी कैसे मदद कर सकती हूँ? बताइए — दाम, सरकारी योजना, या ऑर्डर?</p></div>
+            <div class="row">
+              <button class="cta" onclick="speakSaathi()" data-en="🎙 Tap to speak" data-hi="🎙 बोलें">🎙 Tap to speak</button>
+              <button class="light-btn" onclick="askShilpiBackend()" data-en="Ask Shilpi AI →" data-hi="शिल्पी से पूछें →">Ask Shilpi AI →</button>
+            </div>
+            <input id="shilpiQ" class="search" placeholder="पूछें… e.g. PM Vishwakarma में क्या मिलता है?" value="PM Vishwakarma में क्या मिलता है?" />
+            <audio id="shilpiAudio" controls hidden></audio>
+            <small class="muted" id="shilpiEngine">Engine: local-KB (Groq live if key set)</small>
+            <div class="lang"><button class="active">Hindi</button><button>English</button><button>Regional</button></div>
+            <h4 data-en="Popular Questions" data-hi="लोकप्रिय प्रश्न">Popular Questions</h4>
+            <ul class="faq"><li onclick="quickAsk(this)">How to set the right price?</li><li onclick="quickAsk(this)">Government schemes for artisans</li><li onclick="quickAsk(this)">Marketplace selling tips</li><li onclick="quickAsk(this)">Track my orders</li><li onclick="quickAsk(this)">Help with product listing</li></ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== TRENDING ===== -->
+      <section id="tab-trending" class="tab-page">
+        <div class="sec-head"><div><h2 class="serif" data-en="Trending Crafts" data-hi="ट्रेंडिंग शिल्प">Trending Crafts</h2><p class="sub" data-en="Discover what's gaining attention in the craft world." data-hi="शिल्प जगत में क्या चल रहा है, जानें।">Discover what's gaining attention in the craft world.</p></div></div>
+        <div class="chips"><button class="active">Trending Now</button><button>Rising Crafts</button><button>Viral Designs</button><button>Regional Spotlight</button><button>Most Saved</button><button>Newly Discovered</button></div>
+        <div class="prod-grid" id="trendGrid"></div>
+      </section>
+
+      <!-- ===== SETTINGS ===== -->
+      <section id="tab-settings" class="tab-page">
+        <div class="sec-head"><div><h2 class="serif" data-en="Settings" data-hi="सेटिंग्स">Settings</h2><p class="sub" data-en="Gateway, language, PWA." data-hi="गेटवे, भाषा, PWA।">Gateway, language, PWA.</p></div></div>
+        <div class="card form" style="max-width:560px">
+          <label>FastAPI gateway URL<input id="apiInput" value="http://127.0.0.1:8000" /></label>
+          <div class="row"><button class="cta" onclick="saveApi()">Save gateway</button><button class="light-btn" onclick="pingBackend()">Test connection</button><button class="light-btn" onclick="runDiagnostics()">🔍 Diagnose AI features</button></div>
+          <small class="muted" id="setStatus"></small>
+          <div id="diagOut"></div>
+          <label><span data-en="Language / भाषा" data-hi="भाषा / Language">Language / भाषा</span><select id="setLang" onchange="setLangFromSelect(this.value)"><option value="both">Hindi + English</option><option value="hi">हिंदी (Hindi)</option><option value="en">English</option></select></label>
+          <div class="row"><button class="cta" onclick="toggleLang()" data-en="Switch EN ⇄ हिं" data-hi="EN ⇄ हिं बदलें">Switch EN ⇄ हिं</button></div>
+          <label><input type="checkbox" id="setRemBg" /> Enable rembg true cutout (needs SHILP_REMBG=1 on backend)</label>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="botbar">
+      <span class="bot-brand"><svg viewBox="0 0 32 32" width="26" height="26" fill="none" stroke="#d8a97e" stroke-width="1.5"><path d="M16 4c2.5 3.5 2.5 7 0 10-2.5-3-2.5-6.5 0-10zM8.5 8.5c3.8.8 6.3 3 7.5 6.5-3.8-.8-6.3-3-7.5-6.5zM23.5 8.5c-3.8.8-6.3 3-7.5 6.5 3.8-.8 6.3-3 7.5-6.5zM6 18c4 1 8 1 10-1 2 2 6 2 10 1-1 4-5 7-10 7s-9-3-10-7z"/></svg> KALAKART</span>
+      <span class="bot-links">Craft <i>•</i> Community <i>•</i> Commerce <i>•</i> Powered by AI</span>
+      <span class="bot-pattern" aria-hidden="true"></span>
+      <span class="bot-dots" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+    </footer>
+  </div>
+</div>
+
+<!-- PRODUCT QUICK-VIEW -->
+<div id="prodModal" class="modal" hidden>
+  <div class="modal-card prod-modal">
+    <button class="m-close" onclick="closeProduct()">✕</button>
+    <div class="pm-grid">
+      <div class="pm-img"><img id="pmImg" alt="product" onerror="this.style.display='none'" /><span class="m-tag" id="pmTag"></span></div>
+      <div class="pm-body">
+        <small class="m-craft" id="pmCraft"></small>
+        <h2 class="serif" id="pmName"></h2>
+        <div class="m-art"><span class="m-av" id="pmAv">R</span><span id="pmArt"></span></div>
+        <p id="pmDesc"></p>
+        <div class="tags" id="pmTags"></div>
+        <div class="pm-foot"><span class="m-price big" id="pmPrice"></span><span class="m-rate" id="pmRate"></span></div>
+        <div class="row">
+          <button class="cta" onclick="pmFair()">⚖ Check fair price</button>
+          <button class="light-btn" onclick="pmAsk()">🪔 Ask Shilpi</button>
+          <button class="light-btn" onclick="pmSelect()">⊕ List it</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- LOGIN / REGISTER -->
+<div id="authModal" class="modal" hidden>
+  <div class="modal-card auth-card">
+    <button class="m-close" onclick="closeAuth()">✕</button>
+    <div class="auth-grid">
+      <div class="auth-side">
+        <div class="side-logo">❖</div>
+        <h2 class="serif">KALAKART</h2>
+        <p data-en="Your craft, your story, your business — across 5 marketplaces." data-hi="आपकी कला, कहानी, व्यापार — 5 बाज़ारों तक।">Your craft, your story, your business — across 5 marketplaces.</p>
+        <ul><li>✓ AI listing + fair-price shield</li><li>✓ 1-tap publish: Amazon · Flipkart · GeM · Etsy · ONDC</li><li>✓ शिल्प सखी voice companion</li></ul>
+      </div>
+      <div class="auth-form">
+        <div class="auth-tabs"><button id="tabLogin" class="active" onclick="switchAuthTab('login')">Login</button><button id="tabRegister" onclick="switchAuthTab('register')">Register</button></div>
+        <div id="regNameWrap"><label>Full name<input id="authName" placeholder="Rukmini Devi" /></label></div>
+        <label>Email<input id="authEmail" type="email" placeholder="you@example.in" /></label>
+        <div class="grid2" id="regExtraWrap"><label>Phone<input id="authPhone" placeholder="98765 43210" /></label>
+        <label>I am a<select id="authRole"><option value="artisan">Artisan / कारीगर</option><option value="buyer">Buyer / खरीदार</option></select></label></div>
+        <label>Password<input id="authPass" type="password" placeholder="••••••" /></label>
+        <small class="err" id="authErr"></small>
+        <button class="cta full" id="authGo" onclick="doAuth()">Login →</button>
+        <small class="muted">Accounts live in the backend database · token session 30 days</small>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SHILPI MODAL -->
+<div id="shilpiModal" class="modal" hidden>
+  <div class="modal-card">
+    <div class="m-head"><b>🪔 शिल्प सखी — Voice Assistant</b><button class="light-btn" onclick="closeShilpi()">✕</button></div>
+    <div class="saathi big"><div class="avatar">👩🏽‍💻</div><p id="mSaathiText">नमस्ते! बोलिए — मैं सुन रही हूँ…</p></div>
+    <div class="row"><button class="cta" onclick="modalListen()">🎙 Speak (Web Speech API)</button><button class="light-btn" onclick="modalAsk()">Ask AI</button></div>
+    <input id="mQ" class="search" placeholder="बोलें या लिखें…" value="मेरी थाली का सही दाम क्या है?" />
+    <audio id="mAudio" controls hidden></audio>
+  </div>
+</div>
+
+<!-- ONDC & ML INFO MODAL -->
+<div id="infoModal" class="modal" hidden>
+  <div class="modal-card" style="max-width:680px;max-height:85vh;overflow-y:auto;">
+    <div class="m-head"><b id="infoModalTitle">KalaKart Intelligence</b><button class="light-btn" onclick="closeInfoModal()">✕</button></div>
+    <div id="infoModalBody" style="font-size:13.5px;line-height:1.6;margin-top:10px;"></div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
